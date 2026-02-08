@@ -1,0 +1,10 @@
+try:
+    import pandas as pd
+except ImportError:
+    import subprocess, sys
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "pandas"])
+    import pandas as pd
+
+df = pd.read_csv('data.csv')
+print(len(df))
+print("Task completed")

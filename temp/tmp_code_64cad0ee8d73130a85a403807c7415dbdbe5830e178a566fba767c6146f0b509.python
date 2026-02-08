@@ -1,0 +1,14 @@
+import subprocess, sys
+
+# Ensure pandas is installed
+try:
+    import pandas as pd
+except ImportError:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "pandas"])
+    import pandas as pd
+
+# Load the CSV and get the third row (index 2)
+df = pd.read_csv('data.csv')
+third_row = df.iloc[2]  # third row in 0‑based indexing
+print(third_row)        # prints the third row data
+print("Task completed")

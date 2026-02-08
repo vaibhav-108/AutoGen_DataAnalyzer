@@ -1,0 +1,8 @@
+import pandas as pd
+
+# Read the CSV file
+df = pd.read_csv('data.csv')
+
+# Print the number of rows (excluding the header)
+print(len(df))
+print("Task completed")
