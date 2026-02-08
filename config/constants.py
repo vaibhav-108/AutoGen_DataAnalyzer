@@ -1,0 +1,2 @@
+WORK_DIR= "temp"
+TIMEOUT_DOCKER= 120

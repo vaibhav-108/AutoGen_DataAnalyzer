@@ -1,0 +1,16 @@
+[project]
+name = "dataanalyzer"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "asyncio>=4.0.0",
+    "autogen-agentchat>=0.7.5",
+    "autogen-core>=0.7.5",
+    "autogen-ext[docker]>=0.7.5",
+    "dotenv>=0.9.9",
+    "openai>=2.17.0",
+    "streamlit>=1.54.0",
+    "tiktoken>=0.12.0",
+]
